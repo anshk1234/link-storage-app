@@ -46,10 +46,7 @@ if len(links) > 0:
         col1.markdown(f"**{link['title']}**")
         col2.markdown(f"[Open Link]({link['url']})")
 
-        # Delete button
-        if col3.button("❌", key=i):
-            links.pop(i)
-            save_links(links)
-            st.rerun()
+        
 else:
     st.info("No links saved yet! Add some 😊")
+
